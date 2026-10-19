@@ -1,7 +1,8 @@
 # Publicación de Juntos
 
 La edición gratuita es software libre bajo Apache-2.0. La solicitud de
-F-Droid requiere revisión y no garantiza aceptación. No se ha enviado aún.
+F-Droid requiere revisión y no garantiza aceptación. Se envió la solicitud
+[#4605](https://gitlab.com/fdroid/rfp/-/work_items/4605) el 19 de octubre de 2026.
 
 ## Firma y actualizaciones
 

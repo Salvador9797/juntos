@@ -1,0 +1,1 @@
+Fixes reminders while the app is closed: optional exact alarms, offline recovery and rescheduling after boot or permission changes. Checks notification channels and does not consume blocked reminders. Adds battery diagnostics and a one-minute notification test. Telegram synchronization remains periodic.

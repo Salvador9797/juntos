@@ -1,0 +1,1 @@
+Corrige los recordatorios con la app cerrada: alarmas exactas con permiso, recuperación local sin internet y reprogramación tras reinicios o cambios de permiso. Revisa el canal de notificaciones y evita consumir avisos bloqueados. Añade diagnóstico de batería y prueba en un minuto. La sincronización por Telegram sigue siendo periódica.

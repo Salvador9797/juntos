@@ -1,19 +1,19 @@
 # Juntos
 
 Agenda Android para organizar actividades en pareja. Software libre bajo
-[Apache License 2.0](LICENSE). Android 8 o posterior. Versión 0.3.0, beta pública.
+[Apache License 2.0](LICENSE). Android 8 o posterior. Versión 0.3.1, beta pública.
 
 [Página y descarga](https://juntos-agenda-en-pareja.eagerwand17.chatgpt.site/)
 · [Privacidad](https://juntos-agenda-en-pareja.eagerwand17.chatgpt.site/privacidad.html)
 · [Código y compilación](https://juntos-agenda-en-pareja.eagerwand17.chatgpt.site/codigo/)
 
-**F-Droid: propuesta en preparación, todavía no aceptada ni publicada.**
+**F-Droid: [solicitud #4605 enviada](https://gitlab.com/fdroid/rfp/-/work_items/4605), pendiente de revisión.**
 
 ## Funciones
 
 - Actividades con fecha, hora opcional, notas, etiquetas, emoji y responsable.
 - Agenda, búsqueda, calendario con días pendientes destacados en rojo.
-- Listas de tareas, recordatorios aproximados y repeticiones.
+- Listas de tareas, recordatorios con avisos exactos opcionales y repeticiones.
 - Historial y papelera locales y copias exportadas cifradas.
 - Widget, avisos de cambios y vinculación por QR sin PIN adicional.
 - Asistente guiado que conserva el progreso de configuración.
@@ -54,8 +54,13 @@ como una aplicación auditada de forma independiente.
 
 - Sincroniza cada 30 segundos en pantalla y mediante tareas de Android en
   segundo plano desde intervalos de 15 minutos; pueden retrasarse.
-- Los recordatorios son aproximados. Forzar la detención impide el trabajo
-  en segundo plano hasta volver a abrir la app.
+- Los recordatorios usan alarmas exactas si el usuario concede el acceso en
+  Android 12 o superior. Sin el permiso son aproximados. La actividad debe
+  haber llegado al celular; no se necesita internet para el aviso local.
+- Nosotros → Avisos y batería permite revisar permisos, abrir ajustes y
+  probar una notificación en un minuto. Hay recuperación local periódica.
+- Forzar la detención impide el trabajo en segundo plano hasta volver a abrir
+  la app. Las restricciones del fabricante también pueden impedir avisos.
 - Las ediciones simultáneas de una misma actividad no se combinan por campo.
   Prevalece una revisión; las versiones observadas pueden recuperarse desde
   el historial local, sujeto a sus límites.

@@ -1,0 +1,9 @@
+Juntos 0.3.1
+Compilación release y debug: correcta.
+Android Lint: 0 errores; 8 avisos de traducción de textos.
+ReminderChecks: 13 comprobaciones correctas (horarios, límite de recuperación,
+estados completados/eliminados y prevención de duplicados).
+APK firmada con el certificado de las versiones previas.
+Las pruebas instrumentadas están en app/src/androidTest. La ejecución en
+emulador y la entrega en un Samsung físico no se presentan como verificadas.
+La sincronización Telegram con dos teléfonos reales sigue sin verificarse aquí.
