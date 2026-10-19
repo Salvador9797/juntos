@@ -1,0 +1,4 @@
+PASS: QR 0 matches independent encoder at all 13689 modules (22 ASCII bytes)
+PASS: QR 1 matches independent encoder at all 13689 modules (668 ASCII bytes)
+PASS: QR 2 matches independent encoder at all 13689 modules (1273 ASCII bytes)
+PASS: QR 3 matches independent encoder at all 13689 modules (336 ASCII bytes)

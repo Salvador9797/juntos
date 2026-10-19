@@ -1,0 +1,22 @@
+PASS: Existing Bot API channel IDs preserved
+PASS: Private message link converts to Bot API channel ID
+PASS: Pasted Telegram link without scheme accepted
+PASS: Thread and message IDs do not contaminate channel ID
+PASS: Official Telegram alias supported
+PASS: Invitation link is not misread as a channel ID
+PASS: Public username link requires a private channel link
+PASS: Lookalike host rejected
+PASS: Userinfo host spoofing rejected
+PASS: Incomplete message link rejected
+PASS: Malformed channel number rejected
+PASS: Empty channel input rejected
+PASS: Pasted token outer whitespace handled
+PASS: Broken token with internal whitespace rejected
+PASS: BotFather command is not mistaken for a token
+PASS: New empty installation receives setup guide
+PASS: Existing linked couple bypasses onboarding on update
+PASS: Existing offline activities are not interrupted by forced onboarding
+PASS: Incomplete verification draft resumes even after connection fields were saved
+PASS: Explicit postponement is respected while preserving a draft
+PASS: Restored setup step is bounded
+21 setup checks passed

@@ -1,0 +1,30 @@
+Categories:
+  - Time
+License: Apache-2.0
+WebSite: https://juntos-agenda-en-pareja.eagerwand17.chatgpt.site
+SourceCode: https://juntos-agenda-en-pareja.eagerwand17.chatgpt.site/codigo/
+AntiFeatures:
+  NonFreeNet:
+    en-US: Optional synchronization uses the proprietary Telegram service.
+RepoType: git
+Repo: https://juntos-agenda-en-pareja.eagerwand17.chatgpt.site/git/juntos.git
+AutoName: Juntos
+Summary: A shared planner for your everyday plans
+Description: |-
+    Organize dates, notes, tags, emoji and checklists. Use offline or link two
+    phones using a user-owned Telegram bot and private channels. Optional
+    synchronization encrypts snapshots before uploading. The linking QR grants
+    access to the shared planner. No ads or purchases in this beta.
+
+Builds:
+  - versionName: 0.3.0
+    versionCode: 6
+    commit: v0.3.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 0.3.0
+CurrentVersionCode: 6

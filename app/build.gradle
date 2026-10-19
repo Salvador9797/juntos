@@ -1,0 +1,24 @@
+plugins { id 'com.android.application' }
+android {
+ namespace 'doapp.juntos'
+ compileSdk 35
+ defaultConfig { applicationId 'doapp.juntos'; minSdk 26; targetSdk 35; versionCode 6; versionName '0.3.0' }
+ def releaseKeystore = System.getenv('JUNTOS_RELEASE_KEYSTORE')
+ if (releaseKeystore) {
+  signingConfigs {
+   publication {
+    storeFile file(releaseKeystore)
+    storePassword System.getenv('JUNTOS_RELEASE_STORE_PASSWORD')
+    keyAlias System.getenv('JUNTOS_RELEASE_KEY_ALIAS') ?: 'juntos'
+    keyPassword System.getenv('JUNTOS_RELEASE_KEY_PASSWORD') ?: System.getenv('JUNTOS_RELEASE_STORE_PASSWORD')
+   }
+  }
+ }
+ buildTypes {
+  release {
+   if (releaseKeystore) { signingConfig signingConfigs.publication }
+   minifyEnabled false
+  }
+ }
+ compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}

@@ -1,0 +1,16 @@
+PASS: Encrypted backup round trip with emoji and Spanish
+PASS: Fresh salt and IV for every backup
+PASS: No plaintext activity title in encrypted backup
+PASS: Wrong password rejected
+PASS: Tampered ciphertext rejected
+PASS: Truncated backup rejected
+PASS: Unrecognized envelope rejected
+PASS: Newer revision wins regardless of device
+PASS: Concurrent edits have a deterministic winner
+PASS: Concurrent comparison is symmetric
+PASS: Repeated revisions are idempotent
+PASS: Revision comparison avoids integer overflow
+PASS: 10000 version pairs converge independent of merge order
+PASS: Bounded stream reader retains complete data
+PASS: Oversize stream rejected
+15 checks passed

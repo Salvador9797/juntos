@@ -1,0 +1,22 @@
+PASS: Self-contained QR round trip preserves token, channel IDs, secret and Unicode names without a PIN
+PASS: QR URI does not contain plaintext credentials
+PASS: Source in A assigns B to receiving phone
+PASS: Source in B assigns A to receiving phone
+PASS: Keeps source A when cloud ownership is correct
+PASS: Repairs wrong local slot using existing channel ownership
+PASS: Two phones configured as A are assigned separate spaces when B is empty
+PASS: Existing linked receiving phone keeps its own space
+PASS: QR receiving assignment follows actual source ownership if local configuration was stale
+PASS: Explicit source slot disambiguates legacy copies published by the same phone
+PASS: Normal sync cannot overwrite two occupied spaces
+PASS: Joining refuses to report success before source snapshot exists
+PASS: Source cannot join its own QR
+PASS: Expired QR rejected
+PASS: QR missing embedded key is rejected instead of asking for a PIN
+PASS: Tampered invitation rejected
+PASS: Legacy two-step invitation requests a newly generated QR
+PASS: Cannot create QR with duplicate channels
+PASS: Cannot create QR with empty token
+PASS: Every QR invitation has a fresh random key, salt and IV
+PASS: Actual self-contained invitation fits the QR capacity
+21 linking checks passed

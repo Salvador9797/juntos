@@ -1,0 +1,18 @@
+PASS: Monthly recurrence clamps end of month
+PASS: Monthly recurrence preserves original day after February
+PASS: Leap day anniversary in common year
+PASS: Leap day anniversary recovers February 29
+PASS: Daily recurrence crosses year boundary
+PASS: Weekly recurrence keeps weekday
+PASS: Nonrepeating activity does not recur
+PASS: Overdue monthly series resumes without duplicating all missed instances
+PASS: Overdue daily series resumes on today
+PASS: Reminder honors Dominican timezone and lead time
+PASS: Reminder needs a time
+PASS: Disabled reminder is not scheduled
+PASS: Invalid reminder date is rejected
+PASS: QR dimensions for payload 0
+PASS: QR dimensions for payload 1
+PASS: QR dimensions for payload 2
+PASS: QR oversize input is rejected
+17 feature checks passed
