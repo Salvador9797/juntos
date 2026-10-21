@@ -1,0 +1,1 @@
+Las notas con un elemento por renglón se convierten automáticamente en casillas al guardar. Vista previa del número de elementos y opción para conservar la nota. Reconoce viñetas, numeración y casillas marcadas; conserva cantidades y evita duplicados con la lista existente.

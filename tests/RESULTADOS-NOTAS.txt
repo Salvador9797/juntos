@@ -1,0 +1,109 @@
+CoreChecks:
+PASS: Encrypted backup round trip with emoji and Spanish
+PASS: Fresh salt and IV for every backup
+PASS: No plaintext activity title in encrypted backup
+PASS: Wrong password rejected
+PASS: Tampered ciphertext rejected
+PASS: Truncated backup rejected
+PASS: Unrecognized envelope rejected
+PASS: Newer revision wins regardless of device
+PASS: Concurrent edits have a deterministic winner
+PASS: Concurrent comparison is symmetric
+PASS: Repeated revisions are idempotent
+PASS: Revision comparison avoids integer overflow
+PASS: 10000 version pairs converge independent of merge order
+PASS: Bounded stream reader retains complete data
+PASS: Oversize stream rejected
+15 checks passed
+
+FeatureChecks:
+PASS: Monthly recurrence clamps end of month
+PASS: Monthly recurrence preserves original day after February
+PASS: Leap day anniversary in common year
+PASS: Leap day anniversary recovers February 29
+PASS: Daily recurrence crosses year boundary
+PASS: Weekly recurrence keeps weekday
+PASS: Nonrepeating activity does not recur
+PASS: Overdue monthly series resumes without duplicating all missed instances
+PASS: Overdue daily series resumes on today
+PASS: Reminder honors Dominican timezone and lead time
+PASS: Reminder needs a time
+PASS: Disabled reminder is not scheduled
+PASS: Invalid reminder date is rejected
+PASS: QR dimensions for payload 0
+PASS: QR dimensions for payload 1
+PASS: QR dimensions for payload 2
+PASS: QR oversize input is rejected
+17 feature checks passed
+
+LinkChecks:
+PASS: Self-contained QR round trip preserves token, channel IDs, secret and Unicode names without a PIN
+PASS: QR URI does not contain plaintext credentials
+PASS: Source in A assigns B to receiving phone
+PASS: Source in B assigns A to receiving phone
+PASS: Keeps source A when cloud ownership is correct
+PASS: Repairs wrong local slot using existing channel ownership
+PASS: Two phones configured as A are assigned separate spaces when B is empty
+PASS: Existing linked receiving phone keeps its own space
+PASS: QR receiving assignment follows actual source ownership if local configuration was stale
+PASS: Explicit source slot disambiguates legacy copies published by the same phone
+PASS: Normal sync cannot overwrite two occupied spaces
+PASS: Joining refuses to report success before source snapshot exists
+PASS: Source cannot join its own QR
+PASS: Expired QR rejected
+PASS: QR missing embedded key is rejected instead of asking for a PIN
+PASS: Tampered invitation rejected
+PASS: Legacy two-step invitation requests a newly generated QR
+PASS: Cannot create QR with duplicate channels
+PASS: Cannot create QR with empty token
+PASS: Every QR invitation has a fresh random key, salt and IV
+PASS: Actual self-contained invitation fits the QR capacity
+21 linking checks passed
+
+SetupChecks:
+PASS: Existing Bot API channel IDs preserved
+PASS: Private message link converts to Bot API channel ID
+PASS: Pasted Telegram link without scheme accepted
+PASS: Thread and message IDs do not contaminate channel ID
+PASS: Official Telegram alias supported
+PASS: Invitation link is not misread as a channel ID
+PASS: Public username link requires a private channel link
+PASS: Lookalike host rejected
+PASS: Userinfo host spoofing rejected
+PASS: Incomplete message link rejected
+PASS: Malformed channel number rejected
+PASS: Empty channel input rejected
+PASS: Pasted token outer whitespace handled
+PASS: Broken token with internal whitespace rejected
+PASS: BotFather command is not mistaken for a token
+PASS: New empty installation receives setup guide
+PASS: Existing linked couple bypasses onboarding on update
+PASS: Existing offline activities are not interrupted by forced onboarding
+PASS: Incomplete verification draft resumes even after connection fields were saved
+PASS: Explicit postponement is respected while preserving a draft
+PASS: Restored setup step is bounded
+21 setup checks passed
+
+ReminderChecks:
+PASS: Overdue reminder can recover with app closed
+PASS: Delivered revision is not posted twice
+PASS: Unsent reminder remains eligible after blocked permission
+PASS: A reminder never fires early
+PASS: Reminder due now is eligible
+PASS: Completed activity does not notify
+PASS: Deleted activity does not notify
+PASS: Invalid/no reminder is ignored
+PASS: 24 hour recovery boundary is included
+PASS: Older reminders do not flood the phone
+PASS: Future activity is scheduled
+PASS: Past due reminder rearmed promptly
+PASS: Future reminder retains its original deadline
+13 reminder checks passed
+
+NoteChecklistChecks:
+18 comprobaciones de conversión correctas
+
+Release 0.3.2 (versionCode 8): assembleRelease y lintRelease correctos.
+Lint: 0 errores, 11 avisos de textos sin recursos de traducción (3 nuevos en la vista previa).
+Firma del APK comprobada y coincidente con 0.3.1.
+No se ejecutó en un teléfono real ni se validó la sincronización de esta función en dos dispositivos.

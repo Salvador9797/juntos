@@ -49,8 +49,8 @@ final class TelegramSync {
   if(!pairing&&own!=null&&!own.optString("writer").equals(store.device()))throw new SyncError("El espacio está ocupado. Vincula este celular con un QR nuevo.");
   checkConfiguration();if(Thread.currentThread().isInterrupted())throw new SyncError("Sincronización aplazada por Android.");
   if(a!=null)store.merge(a.getJSONObject("items"),true);if(b!=null)store.merge(b.getJSONObject("items"),true);
-  store.ensureRepeats();JSONObject all=store.items();boolean upload=pairing||own==null||!own.optString("appVersion").equals("0.3.1")||!same(all,own.getJSONObject("items"));
-  if(upload){checkConfiguration();JSONObject snapshot=new JSONObject().put("schema",1).put("writer",store.device()).put("appVersion","0.3.1").put("items",all);upload(config.getString(config.optString("slot","A").equals("A")?"chatA":"chatB"),snapshot,own==null?0:own.optInt("_message"));}
+  store.ensureRepeats();JSONObject all=store.items();boolean upload=pairing||own==null||!own.optString("appVersion").equals("0.3.2")||!same(all,own.getJSONObject("items"));
+  if(upload){checkConfiguration();JSONObject snapshot=new JSONObject().put("schema",1).put("writer",store.device()).put("appVersion","0.3.2").put("items",all);upload(config.getString(config.optString("slot","A").equals("A")?"chatA":"chatB"),snapshot,own==null?0:own.optInt("_message"));}
   if(pairing){JSONObject current=store.config();current.remove("pairingPending");current.remove("pairSource");current.remove("pairSourceSlot");store.config(current);}
   if(initialized)Alerts.change(store.context,store,before);store.stateLong("syncInitialized",1);Alerts.refresh(store.context);
   return "Sincronizado · "+java.time.LocalTime.now().format(java.time.format.DateTimeFormatter.ofPattern("HH:mm"));

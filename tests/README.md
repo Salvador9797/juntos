@@ -16,3 +16,7 @@ ReminderChecks cubre las reglas temporales de entrega y recuperación.
 emulador desechable: permisos bloqueados, recuperación sin duplicados,
 programación y comprobación del aviso tras cerrar el proceso. Nunca se
 incluye en la APK de publicación. No usar sobre una agenda con datos reales.
+
+NoteChecklistChecks verifica el ejemplo de compras (14 renglones), cantidades,
+viñetas, numeración, casillas marcadas y notas que deben conservarse como texto.
+Compilar con NoteChecklist.java y ejecutar doapp.juntos.NoteChecklistChecks.

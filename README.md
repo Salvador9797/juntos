@@ -1,7 +1,7 @@
 # Juntos
 
 Agenda Android para organizar actividades en pareja. Software libre bajo
-[Apache License 2.0](LICENSE). Android 8 o posterior. Versión 0.3.1, beta pública.
+[Apache License 2.0](LICENSE). Android 8 o posterior. Versión 0.3.2, beta pública.
 
 [Página y descarga](https://juntos-agenda-en-pareja.eagerwand17.chatgpt.site/)
 · [Privacidad](https://juntos-agenda-en-pareja.eagerwand17.chatgpt.site/privacidad.html)
@@ -80,3 +80,20 @@ Este proyecto acaba de iniciar su publicación. No se ha habilitado un
 buzón de incidencias propio. La propuesta de inclusión y sus datos se
 encuentran en `fdroid/`; cualquier estado de envío debe verificarse en
 la página del proyecto. No publiques tokens, claves ni QR al pedir ayuda.
+
+## Notas que se convierten en lista (0.3.2)
+
+Al guardar una actividad, las notas con dos o más renglones cortos se convierten
+en casillas dentro de esa misma actividad. Por ejemplo, `10 tomates` conserva
+la cantidad. También se aceptan viñetas, numeración (`1.` o `1)`) y casillas
+`[x]` / `[ ]`. Las casillas importadas marcadas siguen completadas.
+El editor muestra el número de renglones detectados y permite desactivar la
+conversión para esa actividad. Los párrafos separados por una línea vacía,
+las frases completas sin viñetas y los renglones largos se conservan como notas.
+La detección es una regla local de formato, no una interpretación de su contenido.
+
+Al convertir, el texto pasa a las casillas y se retira del campo de notas.
+Los elementos que ya existen no se duplican ni pierden su estado; el límite
+es de 100 elementos. No se convierten datos al abrir una actividad: hace falta
+guardar. Se comparte mediante la sincronización habitual y se conserva el
+historial anterior según los límites locales de la app.
