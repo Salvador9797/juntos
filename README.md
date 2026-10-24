@@ -1,7 +1,44 @@
-# Juntos
+<p align="center">
+  <img src="docs/juntos-icon.png" alt="Icono de Juntos" width="112">
+</p>
+
+<h1 align="center">Juntos · Agenda en pareja</h1>
+
+<p align="center"><strong>Sus planes, en un mismo lugar.</strong><br>
+Organicen actividades, fechas y pendientes; ambos pueden editar su agenda compartida.</p>
+
+<p align="center">
+  <a href="https://github.com/Salvador9797/juntos/releases/latest">Descargar APK para Android</a> ·
+  <a href="https://juntos-agenda-en-pareja.eagerwand17.chatgpt.site/guia.html">Cómo empezar</a> ·
+  <a href="https://juntos-agenda-en-pareja.eagerwand17.chatgpt.site/privacidad.html">Privacidad</a>
+</p>
+
+## Así se ve Juntos
+
+Capturas reales de la aplicación Android. Pulsa una imagen para verla en tamaño completo.
+
+<table>
+  <tr><th>Sus próximos planes</th><th>Crear una actividad</th><th>Calendario compartido</th></tr>
+  <tr>
+    <td><img src="docs/juntos-agenda.jpg" alt="Agenda de Juntos con próximas actividades, hora, responsables y etiquetas" width="250"></td>
+    <td><img src="docs/juntos-crear-actividad.jpg" alt="Formulario para crear un plan con emoji, fecha, hora, responsables, etiquetas y notas" width="250"></td>
+    <td><img src="docs/juntos-calendario.jpg" alt="Calendario mensual de Juntos para consultar y añadir actividades" width="250"></td>
+  </tr>
+</table>
+
+<details>
+<summary>Ver pantalla de inicio</summary>
+
+<img src="docs/juntos-inicio.jpg" alt="Pantalla de inicio de Juntos y botón Crear actividad" width="300">
+
+</details>
+
+**¿Para qué sirve?** Para acordar una salida, preparar compras, recordar una fecha o repartir pendientes cotidianos. Añadan notas, emojis, etiquetas y listas de tareas a cada actividad.
+
+**¿Cómo se comparte?** La agenda funciona localmente sin conexión. Para compartirla, configuren su propio bot de Telegram y dos canales privados; después, el segundo celular se vincula por QR. La sincronización necesita internet y las copias se cifran antes de enviarse. No hace falta una cuenta de Juntos.
 
 Agenda Android para organizar actividades en pareja. Software libre bajo
-[Apache License 2.0](LICENSE). Android 8 o posterior. Versión 0.3.2, beta pública.
+[Apache License 2.0](LICENSE). Android 8 o posterior. Versión 0.3.2, publicada como estable en GitHub.
 
 [Página y descarga](https://juntos-agenda-en-pareja.eagerwand17.chatgpt.site/)
 · [Privacidad](https://juntos-agenda-en-pareja.eagerwand17.chatgpt.site/privacidad.html)
